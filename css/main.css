@@ -1,0 +1,230 @@
+#container{
+	margin: 0 auto;
+	width: 1024px;
+	display: block;
+}
+
+body{
+	max-height: 100%;
+	margin: 0;
+	padding: 0;
+	background: url(../images/game_bckgd_logo.png) no-repeat center;
+	font-family: 'Andale Mono', Arial, sans-serif;
+}
+
+.hidden{
+	display: none;
+}
+
+.showPiece{
+	display: none;
+}
+
+.startScreen{
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	top: 0;
+	background: url(../images/play_background.png) no-repeat;
+	z-index: 100;
+}
+
+.startScreen div{
+	margin: 0 auto;
+}
+
+.startScreen p{
+	margin-left: 225px;
+	text-align: center;
+	width: 515px;
+	font-size: 24px;
+	font-family: 'Andale Mono', Arial, sans-serif;
+	color: white;
+}
+
+#start{
+	margin-left: 400px;
+	margin-top: 0;
+	padding: 5px 15px 5px 15px;
+	font-family: 'Andale Mono', arial, sans-serif;
+	font-size: 30px;
+	background-color: #b3a371;
+	border-radius: 7px;
+	border: solid 1px black;
+	cursor: pointer;
+}
+
+/*NAVIGATION BAR*/
+
+#topBar{
+	height: 73px;
+	width: auto;
+}
+
+#logo{
+	float: left;
+}
+
+#gameBar{
+	float: left;
+	width: 700px;
+	height: 73px;
+	background-color: #707070;
+	border: 8px solid #555;
+	border-radius: 10px;
+	font-size: 24px;
+}
+
+#gameBar div{
+	margin-right: 90px;
+}
+
+#lives{
+	float: left;
+	width: 15%;
+	display: inline;
+}
+
+#lives img{
+
+	margin-top: 18px;
+	margin-left: 10px;
+}
+
+#lives p{
+
+	float: right;
+	clear: left;
+}
+
+#gameBar ul{
+	list-style: none;
+}
+
+#time{
+	float:left;
+}
+
+#score{
+	float: left;
+}
+
+#score p{
+	display: inline;
+	line-height: 73px;
+}
+
+/*GAME INFO*/
+
+#gameInfo{
+	clear: both;
+	font-size: 18px;
+	color: white;
+}
+
+#gameInfo p{
+	width: 1024px;
+	text-align: center;
+	margin-top: 50px;
+	margin-bottom: 40px;
+}
+
+#playAgain{
+	background: none;
+	border: none;
+	padding: 5px;
+	font-size: 30px;
+	color: #fff;
+	cursor: pointer;
+	transition: all 0.2s ease;
+	margin-left: 400px;
+}
+
+#playAgain:hover{
+	background: rgba(255,255,255,0.5);
+	color: #333;
+	border-radius: 10px;
+}
+
+.typeEffect{
+	margin-right: 250px;
+}
+
+.typeEffect h1 {
+  overflow: hidden;
+  color: white;
+	text-align: center;
+  border-right: .15em solid white;
+  white-space: nowrap;
+  margin: 0 auto;
+  letter-spacing: .15em;
+  animation:
+    typing 4.5s steps(40, end),
+    blink-cursor .75s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+/* The type cursor effect */
+@keyframes blink-cursor {
+  from, to { border-color: transparent }
+  50% { border-color: white; }
+}
+
+
+/*CARD FLIPS*/
+
+.container {
+  width:120px;
+  height: 165px;
+  position: relative;
+  perspective: 800px;
+}
+
+.card {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  transform-style: preserve-3d;
+  transition: transform 1s;
+}
+
+.card img {
+  margin: 0;
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+.card .back {
+
+  transform: rotateY( 180deg );
+}
+
+.card.flipped {
+  transform: rotateY( 180deg );
+}
+
+
+/*GAMEPLAY AREA*/
+
+#gameplayArea{
+	width: 90%;
+	margin-left: 10%;
+}
+
+#gameplayArea ul{
+	list-style: none;
+	width: 700px;
+}
+
+#gameplayArea ul li{
+	display: inline-block;
+	margin-right: 20px;
+}
