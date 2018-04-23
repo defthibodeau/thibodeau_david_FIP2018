@@ -1,3 +1,9 @@
+# Website for Starship Troopers
+
+Built with HTML5, CSS, JS
+
+Contributors: David Thibodeau
+
 # HTML web based game for Starship Troopers anniversary edition
 
 Built with HTML5, CSS, JavaScript
