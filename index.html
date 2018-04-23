@@ -1,0 +1,155 @@
+<!doctype html>
+<html class="no-js" lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Starship Troopers</title>
+    <link rel="stylesheet" href="css/foundation.css">
+    <link rel="stylesheet" href="css/app.css">
+
+  </head>
+  <body>
+    <section id="navBar">
+    <h2 class="hidden">Main Navigation</h2>
+		<nav role="navigation">
+		<img src="images/logo.png" id="logo" alt="Logo">
+		<div id="hamMenu">
+		<input type="checkbox" />
+			<span></span>
+			<span></span>
+			<span></span>
+			<ul id="menu">
+				<li><a href="#trailer">We Want You</a></li>
+				<li><a href="#registerForm">Register Today</a></li>
+				<li><a href="#game">Are You Psychic?</a></li>
+				<li><a href="#gallery">Gallery</a></li>
+				<li><a href="#cast">Cast</a></li>    
+			</ul>
+  		</div>
+		</nav> 
+    </section>
+    <div id="trailer">
+    <h2 class="hidden">Movie Trailer</h2>
+    <video id="movieTrailer">
+		<source src="videos/finalTrailer.mp4" type="video/mp4">
+	</video>
+	    <div id="controlBar">
+			<button id="playpausebtn">Play</button>
+	    	<button id="mutebtn">Mute</button>
+    		<input id="volumeslider" type="range" min="0" max="100" value="100" step="1">
+    		<button id="fullscreenbtn">[ &nbsp; ]</button>
+    		<span id="curtimetext">00:00</span> / <span id="durtimetext">00:00</span>
+    		<input id="seekslider" type="range" min="0" max="100" value="0" step="1">
+	    </div>
+    </div>
+    <div id="registerForm">
+    <h2 class="hidden">Registr Form</h2>
+		<h2 id="registerHead">Do Your Part. Sign Up Today!</h2>
+			<form>
+				<div id="column1">
+				<h3 class="hidden">Column1</h3>
+					<p><label>Full Name:<br></label>
+					<input type="text" required></p>
+				
+					<p><label>Birthday:<br></label>
+					<input type="date" required></p>
+				
+					<p><label>Email:<br></label>
+					<input type="email"></p>
+				
+					<p><label for="phone">Phone:<br></label>
+					<input type="tel"></p>
+				
+					<p><label>Address:<br></label>
+					<input type="text" required></p>
+				</div>
+				<div id="column2">
+					<p><label>Desired Branch:</label></p><br>
+				
+					<p><label>Fleet</label>
+					<input id="check1" type="checkbox"></p>
+				
+					<p><label>Mobile Infintry</label>
+					<input id="check2" type="checkbox"></p>
+					
+					<p><label>Miltary Intelligence</label>
+					<input id="check3" type="checkbox"></p>
+				
+					<p><input type="submit" value="Submit" class="button" data-open="formModal"></p>
+				 </div><br>
+			
+			<div class="reveal" id="formModal" data-reveal>
+			  <h1>We'll Be In Touch!</h1>
+			  <p class="lead">Just Remember...</p>
+			  <p>"Figuring things out for yourself is the only freedom anyone really has, use that freedom, make up your own mind."</p>
+			  <button class="close-button" data-close aria-label="Close modal" type="button">
+				<span aria-hidden="true">&times;</span>
+			  </button>
+			</div>
+			</form><br>
+	</div>
+    <div id="game">
+    	<h2 class="gameArea">Are You Psychic?</h2>
+   		<a href="game.html" class="button">Find Out Here.</a>
+    </div>
+    <div id="gallery">
+    <h2 class="hidden">Gallery</h2>
+    	<div class="row align-center">
+	  <div class="product-image-gallery">
+		<img class="pdp-product-image" id="main-product-image" src="images/gallery1.jpg" alt="Gallery Image">
+		<p>The film started life as a script called Bug Hunt at Outpost Nine.</p>
+		<br>
+		<ul class="menu product-thumbs align-center" id="thumbs">
+		  <li> <a class="sim-thumb" data-image="images/gallery1.jpg" alt="Gallery Image"><img src="images/gallery1.jpg" alt="Gallery Image" width="80px"></a> </li>
+		  <li> <a class="sim-thumb" data-image="images/gallery2.jpg" alt="Gallery Image"><img src="images/gallery2.jpg" alt="Gallery Image" width="80px"></a> </li>
+		  <li> <a class="sim-thumb" data-image="images/gallery3.jpg" alt="Gallery Image"><img src="images/gallery3.jpg" alt="Gallery Image" width="80px"></a> </li>
+		  <li> <a class="sim-thumb" data-image="images/gallery4.jpg" alt="Gallery Image"><img src="images/gallery4.jpg" alt="Gallery Image" width="80px"></a> </li>
+		  <li> <a class="sim-thumb" data-image="images/gallery6.jpg" alt="Gallery Image"><img src="images/gallery6.jpg" alt="Gallery Image" width="80px"></a> </li>
+		  <li> <a class="sim-thumb" data-image="images/gallery9.png" alt="Gallery Image"><img src="images/gallery9.png" alt="Gallery Image" width="80px"></a> </li>
+		</ul>
+	  </div>
+		</div>
+	</div>
+    <div id="cast">
+    <h2 class="hidden">Cast</h2>
+		<div id="CVD">
+			<img src="images/cast1.png" alt="Casper Van Dien" width="180px">
+			<h2>Casper Van Dien</h2>
+			<p>He got the breakthrough role of Johnny Rico, his success in Starship Troopers subsequently resulted in his casting as Tarzan in Tarzan and the Lost City.</p><br>
+		</div>
+		<div id="DM">
+			<img src="images/cast2.png" alt="Dina Meyer" height="180px">
+			<h2>Dina Meyer</h2>
+			<p>Her role in Starship Troopers cemented her career in movies and telivision.</p><br>
+		</div>
+		<div id="DR">
+			<img src="images/DR.jpg" alt="Denise Richards" height="180px">
+			<h2>Denise Richards</h2>
+			<p>Her first starring role was in Starship Troopers for which she was nominated for the Blockbuster Entertainment Award for Favorite Female Newcomer.</p><br>
+		</div>
+		<div id="NPH">
+			<img src="images/NPH.jpg" alt="Neil Patrick Harris" width="180px">
+			<h2>Neil Patrick Harris</h2>
+			<p>Starship Troopers was one of NPH's earlier roles which led to his very successful career.</p><br>
+		</div>
+		<div id="JB">
+			<img src="images/JB.jpg" alt="Jake Busey" width="180px">
+			<h2>Jake Busey</h2>
+			<p>One of his most notable appearances is the smart-mouthed soldier Ace Levy in Starship Troopers.</p><br>
+		</div>
+    </div>
+    <footer>
+	<section id="footerBar">
+	<h2 class="hidden">Footer</h2>
+		<div id="copyRight">
+    		<p>&copy; 1997 Starship Troopers</p>
+    	</div>
+	</section>
+	</footer>                 
+    <script src="js/vendor/jquery.js"></script>
+    <script src="js/vendor/what-input.js"></script>
+    <script src="js/vendor/foundation.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>

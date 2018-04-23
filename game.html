@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/main.css">
+  <title>Starship Troopers Memory Game</title>
+</head>
+<body>
+  <main id="container">
+    <h1 class="hidden">The Starship Troopers Memory Game</h1>
+
+<!--BEGINNING PLAY SCREEN-->
+    <section class="startScreen">
+      <h2 class="hidden">Click to Play!</h2>
+
+      <div>
+      <img src="images/title_lg.png" alt="Starship Troopers Logo"><!--Lg Starship Troopers logo for start screen-->
+    </div>
+
+        <p>Young people all over the globe are joining up to save the future!</p>
+        <button id="start">PLAY</button>
+
+
+    </section>
+
+<!--TOP BAR WITH LIVES, ETC...-->
+    <section id="topBar">
+      <h2 class="hidden">Score, Time, and Lives</h2>
+
+      <div id="logo">
+        <img src="images/title_copy.png" alt="logo">
+      </div>
+
+      <div id="gameBar">
+
+        <div id="lives">
+          <img src="images/life1.png" alt="life icon">
+          <p class="livesCon"></p>
+        </div>
+
+        <div id="time">
+          <p>TIME:<span id="minutes"></span>:<span id="seconds"></span></p>
+        </div>
+        <div id="score">
+          <p>SCORE:</p>
+          <p id="scoreCount"></p> <!--empty p tag to insert score in js-->
+        </div>
+
+      </div>
+    </section>
+
+<!--GAME INFO AND WIN/LOSE MESSAGE SECTION-->
+    <section id="gameInfo">
+      <h2 class="hidden">Info About The Game</h2>
+
+      <div id="infoSection">
+        <p id="gameStatus">Match the cards to earn points.</p>
+        <p id="gameStatusMessage">Remember your training, and you will make it out alive! -Lieutenant Willy</p>
+
+        <button id="playAgain" class="showPiece">PLAY AGAIN?</button>
+      </div>
+      <div class="typeEffect">
+    	 <h1 class="showPiece">Game Over. Better Luck Next Time.</h1>
+      </div>
+    </section>
+
+<!--GAMEPLAY AREA-->
+    <section id="gameplayArea">
+      <h2 class="hidden">Game Play Area</h2>
+<!--CARDS-->
+
+
+    </section>
+
+
+  </main>
+  <script src="js/main.js"></script>
+</body>
+</html>
